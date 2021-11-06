@@ -9,26 +9,26 @@ The game ends if the Wizard's health reaches 0.
 
 ## Game Instructions (also found in-game)
 
-HOW TO PLAY SKYFIRE:
-First, you are supposed to free all hostages in the 4 villages.
-Only then, you can go to the fortress and defeat THE NECROMANCER.
+HOW TO PLAY SKYFIRE:<br>
+First, you are supposed to free all hostages in the 4 villages.<br>
+Only then, you can go to the fortress and defeat THE NECROMANCER.<br>
 
-In battles, you and your opponent choose 1 out of 3 spells to defeat the other.
-The DEFENSE spell beats the ATTACK spell.
-The ATTACK spell beats the CONFUSE spell.
-The CONFUSE spell beats the DEFENSE spell.
-If you both pick the same spell, the person with the higher LEVEL wins.
-If one of you has a very high LEVEL, they could win the round even if you pick the wrong spell.
-As you win battles, your LEVEL increases.
-If you lose battles, your HEALTH decreases.
+In battles, you and your opponent choose 1 out of 3 spells to defeat the other.<br>
+The DEFENSE spell beats the ATTACK spell.<br>
+The ATTACK spell beats the CONFUSE spell.<br>
+The CONFUSE spell beats the DEFENSE spell.<br>
+If you both pick the same spell, the person with the higher LEVEL wins.<br>
+If one of you has a very high LEVEL, they could win the round even if you pick the wrong spell.<br>
+As you win battles, your LEVEL increases.<br>
+If you lose battles, your HEALTH decreases.<br>
 
-In every village, you can roll the DICE OF DESTINY, which could increase or decrease your LEVEL.
-The minimum LEVEL you can have is 10 and the maximum LEVEL you can have is 120.
-You can only run the DICE OF DESTINY 3 times in each village.
+In every village, you can roll the DICE OF DESTINY, which could increase or decrease your LEVEL.<br>
+The minimum LEVEL you can have is 10 and the maximum LEVEL you can have is 120.<br>
+You can only run the DICE OF DESTINY 3 times in each village.<br>
 
-If your HEALTH reaches 0, GAME OVER!
+If your HEALTH reaches 0, GAME OVER!<br>
 
-Good Luck and Have Fun saving SKYFIRE!
+Good Luck and Have Fun saving SKYFIRE!<br>
     
 ## How to run
 
