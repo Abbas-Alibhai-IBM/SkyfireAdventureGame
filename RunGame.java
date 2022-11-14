@@ -6,6 +6,8 @@
 public class RunGame extends Game
 {
     public static void main(String[] args){
+      // TitleCard TitleCard = new TitleCard("");
+      // System.out.println(TitleCard.getName());
         Game Game = new Game();
         String name = Game.intro();
         Game.howToPlay();

@@ -202,14 +202,14 @@ public class Stages
                 System.out.println("All of Skyfire thanks you for keeping their land free of EVIL!");
                 System.out.println("THE END!!!");
                 System.out.println("");
-                System.out.println("------------------------------------------------------------------------------------------------");
+                System.out.println(titleMaker(""));
                 System.out.println("-------- YOUR STATS: --------");
                 System.out.println("Your HEALTH in the end was: " + tempWizard.getHealth());
                 System.out.println("Your LEVEL in the end was: " + tempWizard.getLevel());
                 System.out.println("You completed all 6 stages in the game!");
                 System.out.println("You saved 4 villages, defeated 5 of The Necromancer's minions and defeated The Necromancer.");
                 System.out.println("");
-                System.out.println("--------------------------------------- skyfire will return... ---------------------------------");
+                System.out.println(titleMaker("skyfire will return..."));
                 System.exit(0);
             }
         }
@@ -229,4 +229,24 @@ public class Stages
         String answer = inputString(message);
         return Integer.parseInt(answer);
     }
+
+    public String titleMaker(String text){
+        String name = "";
+        int number = (text.length() + 2);
+        for (int i = 0; i < ((96-number)/2); i++) {
+            name += "-";
+        }
+        if (text.length() == 0) {
+            name += "--";
+        } else {
+            name += " ";
+            name += text;
+            name += " ";
+        }
+        for (int i = 0; i < ((96-number)/2); i++) {
+            name += "-";
+        }
+        return name;
+    }
+}
 }

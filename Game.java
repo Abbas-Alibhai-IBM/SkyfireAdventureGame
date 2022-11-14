@@ -8,10 +8,11 @@ public class Game
 {
     // methods
     public String intro()
-    {
-        System.out.println("------------------------------------------------------------------------------------------------");
-        System.out.println("--------------------------------------- WELCOME TO SKYFIRE -------------------------------------");
-        System.out.println("------------------------------------------------------------------------------------------------");
+    {   
+        
+        System.out.println(titleMaker(""));
+        System.out.println(titleMaker("WELCOME TO SKYFIRE"));
+        System.out.println(titleMaker(""));
         String name = inputString("What is your name, fellow Wizard?");
         Entity tempWizard = new Wizard(name);
         tempWizard.setName(name);
@@ -21,7 +22,7 @@ public class Game
         System.out.println("THE NECROMANCER has attacked several VILLAGES and colonized the BLACK HALLOWS FORTRESS.");
         System.out.println("Currently, his minions are keeping the villagers hostage in each village's DUNGEON.");
         System.out.println("We hope you will be able to save our villagers and defeat THE NECROMANCER.");
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         return name;
     }
             
@@ -44,7 +45,7 @@ public class Game
         System.out.println("If your HEALTH reaches 0, GAME OVER!");
         System.out.println("");
         System.out.println("Good Luck and Have Fun saving SKYFIRE!");
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
     }
             
@@ -55,7 +56,7 @@ public class Game
                 
         // Stage 1 - THE TARNSTEAD VILLAGE
         Stages village1 = new Stages();
-        System.out.println("----------------------------------------- STAGE 1 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 1"));
         String v1Name = "TARNSTEAD";
         System.out.println("You have entered " + v1Name + " VILLAGE.");
         System.out.println("");                
@@ -92,12 +93,12 @@ public class Game
             }
                 
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
         
         // Stage 2 - THE IRAGORN VILLAGE
         Stages village2 = new Stages();        
-        System.out.println("----------------------------------------- STAGE 2 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 2"));
         String v2Name = "IRAGORN";
         System.out.println("You have entered " + v2Name + " VILLAGE.");
         System.out.println("");     
@@ -135,12 +136,12 @@ public class Game
             }
                 
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
         
         // Stage 3 - THE BECKINSDALE VILLAGE
         Stages village3 = new Stages();
-        System.out.println("----------------------------------------- STAGE 3 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 3"));
         String v3Name = "BECKINSDALE";
         System.out.println("You have entered " + v3Name + " VILLAGE.");
         System.out.println("");
@@ -178,12 +179,12 @@ public class Game
             }
                 
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
                 
         // Stage 4 - THE MEADSVILLE VILLAGE
         Stages village4 = new Stages();
-        System.out.println("----------------------------------------- STAGE 4 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 4"));
         String v4Name = "MEADSVILLE";
         System.out.println("You have entered " + v4Name + " VILLAGE.");
         System.out.println("");        
@@ -221,12 +222,12 @@ public class Game
             }
                 
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
         
         // Stage 5 - ENTRANCE THE DARK HALLOWS FORTRESS
         Stages outerfortress = new Stages();
-        System.out.println("----------------------------------------- STAGE 5 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 5"));
         String v5Name = "THE DARK HALLOWS";
         System.out.println("You are hiding in the bushes, looking at the entrance of " + v5Name + " FORTRESS");
         System.out.println("");      
@@ -264,12 +265,12 @@ public class Game
             }
                 
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
         
         // Stage 6 - THE DARK HALLOWS FORTRESS
         Stages fortress = new Stages();
-        System.out.println("----------------------------------------- STAGE 6 ----------------------------------------------");
+        System.out.println(titleMaker("STAGE 6"));
         String v6Name = "DARK HALLOWS FORTRESS";
         System.out.println("You enter the " + v6Name);
         System.out.println("");       
@@ -312,7 +313,7 @@ public class Game
                 System.exit(0);
             }
         }
-        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println(titleMaker(""));
         System.out.println("");
     }
         
@@ -328,5 +329,24 @@ public class Game
     {
         String answer = inputString(message);
         return Integer.parseInt(answer);
+    }
+
+    public String titleMaker(String text){
+        String name = "";
+        int number = (text.length() + 2);
+        for (int i = 0; i < ((96-number)/2); i++) {
+            name += "-";
+        }
+        if (text.length() == 0) {
+            name += "--";
+        } else {
+            name += " ";
+            name += text;
+            name += " ";
+        }
+        for (int i = 0; i < ((96-number)/2); i++) {
+            name += "-";
+        }
+        return name;
     }
 }
